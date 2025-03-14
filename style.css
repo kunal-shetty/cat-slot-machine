@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.contain {
+    margin-left: 20px;
+}
+p {
+    font-size: 25px;
+    margin: 15px 0;
+}
+.roll-display {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.roll-display img,
+.roll-display video {
+    width: 100%;
+    height: 100%;
+}
+button.reset { 
+    margin-right: 20px;
+}
+button {
+    font-size: 20px;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+#money {
+    margin-left: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#moneyGain {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #ff5733;
+}

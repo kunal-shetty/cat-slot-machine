@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Slots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cat Slots</h1>
+        <div class="roll-display">
+            <img id="rollImage" src="cats/main.webp" style="display: block;">
+            <video id="rollVideo" style="display: none;" autoplay></video>
+        </div>
+        <button onclick="startRoll()">Roll the Dice</button>
+        <p id="result">Start Gamblin' Today!!</p>
+        <p id="moneyGain"></p>
+    </div>
+    <div class="contain">
+        <p id="money">Money: 10 $</p>
+        <button class="reset" onclick="resetMoney()">Reset</button>
+        <button onclick="toggleMusic()">🎵 Toggle Music</button>
+    </div>
+    <audio id="slotMusic" src="audio/slot-machine-music.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
