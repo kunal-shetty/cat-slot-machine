@@ -37,9 +37,8 @@ p {
 }
 
 .roll-display {
-    width: 80%;
-    max-width: 300px;
-    height: auto;
+    width: 300px;
+    height: 300px;
     margin: 20px auto;
     border: 2px solid #333;
     border-radius: 10px;
@@ -48,13 +47,14 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .roll-display img,
 .roll-display video {
     width: 100%;
-    height: auto;
-    max-height: 300px;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
 }
 
