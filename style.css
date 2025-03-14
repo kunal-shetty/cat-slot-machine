@@ -2,32 +2,44 @@ body {
     font-family: Arial, sans-serif;
     color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
     margin: 0;
     background: url('bg.jpeg') no-repeat center center fixed;
     background-size: cover;
+    text-align: center;
+    padding: 10px;
 }
+
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 600px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 30px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
+
 .contain {
-    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
+
 p {
-    font-size: 25px;
-    margin: 15px 0;
+    font-size: 22px;
+    margin: 10px 0;
 }
+
 .roll-display {
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    max-width: 300px;
+    height: auto;
     margin: 20px auto;
     border: 2px solid #333;
     border-radius: 10px;
@@ -37,43 +49,41 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .roll-display img,
 .roll-display video {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
 }
-button.reset { 
-    margin-right: 20px;
-}
+
 button {
-    font-size: 20px;
-    padding: 12px 25px;
+    font-size: 18px;
+    padding: 10px 20px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
+    width: 90%;
+    max-width: 250px;
+    margin-top: 10px;
 }
+
 button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
 #money {
-    margin-left: 50px;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-#moneyGain {
     font-size: 24px;
     font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 15px;
+    margin-top: 10px;
 }
-#result {
-    font-size: 24px;
+
+#moneyGain, #result {
+    font-size: 20px;
     font-weight: bold;
-    margin-top: 15px;
-    color: #ff5733;
 }
