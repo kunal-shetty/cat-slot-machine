@@ -40,8 +40,7 @@ It’s made using **HTML, CSS, and JavaScript**, and is all about rolling for cu
 │── index.html
 │── style.css
 │── script.js
-└── assets/
-      └── cats/ (cat images)
+└── cats/ (cat images)
 ```
 
 ---
